@@ -13,6 +13,8 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
+set :fonts_dir,  "fonts"
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
