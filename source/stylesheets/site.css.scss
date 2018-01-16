@@ -2,19 +2,130 @@
 @import "skeleton.css";
 @import "font-awesome.css";
 
-.home-page {
-  padding: 0 100px 0 100px;
-  .home {
-    color: white;
-    background-image: url("../images/home.jpg");
-    background-repeat: no-repeat;
-    background-size: 45%;
-    min-height: 700px;
+body {
+  color: #636363;
+}
+
+.navigation {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  a {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 2px;
+    color: gray;
+    text-decoration: none;
+    font-size: 16px;
   }
 }
 
+//homepage
+.home-page {
 
-.proj-imgs {
-  max-width: 450px;
+  .home {
+    padding: 5px;
+    color: white;
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    min-height: 500px;
+    .social {
+      font-size: 20px;
+
+      hr {
+        margin-bottom: 5px;
+        max-width: 350px;
+      }
+      a {
+        margin-left: 5px;
+        color: white;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+//projects
+.project {
+  position: relative;
+  margin: 5px;
+  border: 1px solid #636363;
+  max-height: 220px;
+  overflow: hidden;
+
+  .proj-imgs {
+    max-width: 100%;
+  }
+
+  .hover-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(99, 99, 99, 0.9);
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    .view-button {
+      border: 1px solid white;
+      padding: 5px;
+      border-radius: 2px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+}
+
+.project:hover .hover-content {
+  opacity: 1;
+}
+
+//project-template
+
+.project-template {
+  img {
+    max-width: 100%;
+  }
+  margin-bottom: 30px;
+}
+
+
+//about page
+
+.about {
+
+  .about-img {
+    margin-top: -56px;
+    max-width: 300px;
+    margin-left: 50px;
+  }
+  .social {
+    hr {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #636363;
+      font-size: 22px;
+      margin-left: 5px;
+    }
+
+
+  }
 
 }
