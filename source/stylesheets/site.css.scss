@@ -122,9 +122,9 @@ body {
 .about {
 
   .about-img {
-    margin-top: -56px;
+    margin-top: -40px;
     max-width: 300px;
-    margin-left: 50px;
+    margin-left: 10px;
   }
 
   .social {
@@ -139,4 +139,11 @@ body {
       margin-left: 5px;
     }
   }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+  .about-img {
+    display: none;
+  }
+
 }
