@@ -1,0 +1,102 @@
+@import url(normalize.css);
+@import url(skeleton.css);
+@import url(font-awesome.css);
+body {
+  color: #636363; }
+
+.navigation {
+  margin-top: 10px;
+  margin-bottom: -10px; }
+  .navigation a {
+    border: 1px solid #636363;
+    padding: 5px;
+    border-radius: 2px;
+    color: #636363;
+    text-decoration: none;
+    font-size: 16px; }
+  .navigation a:hover {
+    color: white;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    background-color: rgba(138, 138, 138, 0.9); }
+
+.home-page .home {
+  padding: 5px;
+  color: white;
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  min-height: 500px; }
+  .home-page .home .social {
+    font-size: 20px; }
+    .home-page .home .social hr {
+      margin-bottom: 5px;
+      max-width: 350px; }
+    .home-page .home .social a {
+      margin-left: 5px;
+      color: white;
+      font-size: 22px; }
+
+.project {
+  position: relative;
+  margin: 5px;
+  border: 1px solid #636363;
+  max-height: 220px;
+  overflow: hidden; }
+  .project .proj-imgs {
+    max-width: 100%; }
+  .project .hover-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-color: rgba(250, 250, 250, 0.9); }
+  .project .text {
+    color: #636363;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+
+.project:hover .hover-content {
+  opacity: 1; }
+
+.project-template {
+  margin-bottom: 30px; }
+  .project-template img {
+    max-width: 100%; }
+  .project-template .proj-view-button {
+    color: #636363;
+    padding: 8px;
+    border: 1px solid #636363;
+    text-decoration: none; }
+  .project-template .proj-view-button:hover {
+    color: white;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-color: rgba(138, 138, 138, 0.9); }
+
+.about .about-img {
+  margin-top: -40px;
+  max-width: 300px;
+  margin-left: 10px; }
+.about .social hr {
+  margin-bottom: 5px; }
+.about .social a {
+  color: #636363;
+  font-size: 22px;
+  margin-left: 5px; }
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+  .about-img {
+    display: none; } }
