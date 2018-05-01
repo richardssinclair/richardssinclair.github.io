@@ -1,101 +1,57 @@
 ---
 title: Richard Sinclair
 ---
-  <div class="container">
 
-    <div class="row">
-      <div class="navigation">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-      </div>
+<div class="container project-page">
+
+  <div class="row animated fadeInLeft">
+    <div class="col-md-6">
+      <a href="https://remotecomposer.herokuapp.com/"><h4>Remote Composer</h4></a>
+      <p>Remote Composer is an open source music composition platform, for composers and artists who want to collaborate and develop musical ideas together. This app was built in four days as a duo project.</p>
+      <p class="small"><a href="https://github.com/jgburton/wdi_project_4_api"><i class="fab fa-github" aria-hidden="true"></i> View the code</a> </p>
     </div>
-
-    <hr>
-    <h3>Projects</h3>
-
-    <div class="row">
-
-      <div class="six columns">
-        <a href="../projects/projectD">
-          <div class="project">
-            <img class="proj-imgs" src="../images/proj-4.jpg" alt="">
-            <div class="hover-content">
-              <div class="text">
-                <h3>Remote Composer</h3>
-                <p>A platform for collaborating musicians</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="six columns">
-        <a href="../projects/projectC">
-          <div class="project">
-            <img class="proj-imgs" src="../images/proj-3.jpg" alt="">
-            <div class="hover-content">
-              <div class="text">
-                <h3>nApp</h3>
-                <p>A dream diary app</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div><!-- row -->
-
-    <div class="row">
-
-      <div class="six columns">
-        <a href="../projects/projectB">
-          <div class="project">
-            <img class="proj-imgs" src="../images/proj-2.jpg" alt="">
-            <div class="hover-content">
-              <div class="text">
-                <h3>Pubbing</h3>
-                <p>A pubcrawl app</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="six columns">
-        <a href="../projects/projectA">
-          <div class="project">
-            <img class="proj-imgs" src="../images/proj-1.png" alt="">
-              <div class="hover-content">
-                <div class="text">
-                  <h3>Buzzcock</h3>
-                  <p>A music hangman game</p>
-                </div>
-              </div>
-          </div>
-        </a>
-      </div>
-
-    </div><!-- row -->
-
-    <div class="row">
-
-      <div class="six columns">
-        <a href="../projects/projectF">
-          <div class="project">
-            <img class="proj-imgs" src="../images/art.jpg" alt="">
-            <div class="hover-content">
-              <div class="text">
-                <h3>Art</h3>
-                <p>My Artwork</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="six columns">
-        <img src="" alt="">
-      </div>
-
-    </div><!-- row -->
-
+    <div class="col-md-6">
+      <img class="img-fluid" src="/images/proj-4.jpg" alt="">
+    </div>
   </div>
+
+  <hr>
+
+  <div class="row animated fadeInRight">
+    <div class="col-md-6">
+      <a href="https://napp-richard.herokuapp.com/"><h4>nApp</h4></a>
+      <p>nApp is a dream diary app where you can log your dreams and track your sleep data using the fitbit API. The app also includes a moodboard where you can customise calming sounds to help you rest. This was a group project during my time at General Assembly.</p>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="/images/proj-3.jpg" alt="">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row animated fadeInLeft">
+    <div class="col-md-6">
+      <a href="https://pubbing.herokuapp.com/"><h4>Pubbing</h4></a>
+      <p>Pubbing is a pub crawl app. Enter your destination and the number of pubs you would like to visit. This app was my first attempt at using the google maps API.</p>
+      <p class="small"><a href="https://github.com/richardssinclair/WDI-Project-2"><i class="fab fa-github" aria-hidden="true"></i> View the code</a> </p>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="/images/proj-2.jpg" alt="">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row animated fadeInRight">
+    <div class="col-md-6">
+      <a href="https://radiant-hamlet-24937.herokuapp.com/"><h4>Buzzcock</h4></a>
+      <p>Buzzcock is a hangman game for music lyrics, guess the missing lyric. This was the first project I made at General Assembly. (contains sound)</p>
+      <p class="small"><a href="https://github.com/richardssinclair/WDI_Project_1"><i class="fab fa-github" aria-hidden="true"></i> View the code</a> </p>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="/images/proj-1.png" alt="">
+    </div>
+  </div>
+
+  <%= partial 'partials/social' %>
+</div>

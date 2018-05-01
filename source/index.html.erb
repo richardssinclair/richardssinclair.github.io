@@ -2,41 +2,84 @@
 title: Richard Sinclair
 ---
 
-<div class="container">
+<div class="banner">
+  <h1 class="animated fadeInDown">Richard Sinclair</h1>
+  <h6>Junior Front End Developer</h6>
+</div>
+
+<div class="container about">
+  <p>
+    My background is in the Creative Arts, I have always been passionate about drawing, sculpting and photography. I developed an interest for code through a few creative coding meet ups where I saw immersive animations, games and portfolios all dont in JavaScript. I really enjoyed what I learnt at these and wanted to apply my creativity to the digital world so I decided to learn to code and joined General Assembly.
+  </p>
+
+  <p>
+    Since then I have done internships at Goodgym and Iron SLS giving me experience at delivering production code. I primarily worked on templating and styling new pages using HTML, SASS and JavaScript . I am now looking for a creative place to establish myself as a front end developer.
+  </p>
+
+  <%= partial 'partials/social' %>
+</div>
+
+<div class="container experience">
+
+  <h2>Experience</h2>
 
   <div class="row">
-    <div class="navigation">
-      <a href="/projects">Projects</a>
-      <a href="/about">About</a>
+    <div class="col-lg-6">
+      <h4>Iron Group</h4>
+      <p>Iron is a subscription based company specialising in digital assistance services. During my time there I worked and created a variety of templates using HTML, SCSS and a bit of Angular for some of their new and existing projects.</p>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid" src="/images/iron.jpg" alt="">
     </div>
   </div>
 
+  <hr>
+
   <div class="row">
-    <hr>
-    <div class="container">
 
-
-      <div class="six columns offset-by-three">
-
-        <div class="home-page">
-          <div class="home">
-            <h1>Richard <br> Sinclair</h1>
-            <h4>Junior Front End Web Developer</h4>
-            <h4>London</h4>
-            <div class="social">
-              <hr>
-              <a href="https://github.com/richardssinclair/"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href="https://www.instagram.com/richardssinclair/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/in/richardssinclair/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/richssinclair"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="mailto:richardssinclair@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="col-lg-6">
+      <h4>Goodgym</h4>
+      <p>Goodgym is a community of runners that combines getting fit with doing good. During my time there the website was going throgh a redesign and I helped create new templates using HTML and SCSS with a bit of Ruby.</p>
     </div>
-
+    <div class="col-lg-6">
+      <img class="img-fluid" src="/images/goodgym.png" alt="">
+    </div>
   </div>
+  <hr>
+
+</div>
+
+
+<div class="container projects">
+
+  <h2>Portfolio</h2>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <a href="https://remotecomposer.herokuapp.com/"><h4>Remote Composer</h4></a>
+      <p>
+        Remote Composer is an open source music composition platform, for composers and artists who want to collaborate and develop musical ideas together. This app was built in four days as a duo project.
+      </p>
+      <p class="small"><a href="https://github.com/jgburton/wdi_project_4_api"><i class="fab fa-github" aria-hidden="true"></i> View the code</a> </p>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid" src="/images/proj-4.jpg" alt="">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <a href="https://pubbing.herokuapp.com/"><h4>Pubbing</h4></a>
+
+      <p>Pubbing is a pub crawl app. Enter your destination and the number of pubs you would like to visit. This app was my first attempt at using the google maps API.</p>
+      <p class="small"><a href="https://github.com/richardssinclair/WDI-Project-2"><i class="fab fa-github" aria-hidden="true"></i> View the code</a> </p>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid" src="/images/proj-2.jpg" alt="">
+    </div>
+  </div>
+
+  <%= partial 'partials/social' %>
 </div>
